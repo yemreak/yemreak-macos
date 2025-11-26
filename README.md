@@ -2,12 +2,16 @@
 
 Menu bar productivity app for macOS.
 
+![Menu Bar](images/v0.2.0/menu-bar.png)
+
 ## Features
 
 - Voice Dictation - Local speech-to-text via WhisperKit
 - Global Hotkeys - Trigger actions from anywhere
 - Transcription History - Browse and search past dictations
 - Auto Updates - Sparkle integration
+
+![Dictation History](images/v0.2.0/dictation-history.png)
 
 ## Installation
 
