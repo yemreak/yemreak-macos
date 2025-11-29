@@ -4,6 +4,12 @@ Menu bar productivity app for macOS.
 
 ![Menu Bar](images/v0.2.0/menu-bar.png)
 
+## Installation
+
+1. Download `yemreak-macOS.dmg` from [Releases](https://github.com/yemreak/yemreak-macos/releases)
+2. Mount and drag to Applications
+3. Grant permissions: Microphone, Accessibility
+
 ## Features
 
 - Voice Dictation - Local speech-to-text via WhisperKit
@@ -15,12 +21,6 @@ Menu bar productivity app for macOS.
 ![Dictation History](images/v0.2.0/dictation-history.png)
 
 ![Display Menu](images/v0.3.0/display-menu.png)
-
-## Installation
-
-1. Download `yemreak-macOS.dmg` from [Releases](https://github.com/yemreak/yemreak-macos/releases)
-2. Mount and drag to Applications
-3. Grant permissions: Microphone, Accessibility
 
 ## Requirements
 
