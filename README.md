@@ -6,7 +6,7 @@ Menu bar productivity app for macOS.
 
 ## Installation
 
-1. Download `yemreak-macOS.dmg` from [Releases](https://github.com/yemreak/yemreak-macos/releases)
+1. Download `yemreak-macOS.dmg` from [Releases](https://github.com/yemreak/yemreak-macos/releases/download/v0.3.0/yemreak-macOS.dmg)
 2. Mount and drag to Applications
 3. Grant permissions: Microphone, Accessibility
 
