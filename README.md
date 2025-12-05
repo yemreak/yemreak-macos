@@ -1,26 +1,58 @@
 # yemreak macOS
 
-Menu bar productivity app for macOS.
+![Cover](images/v0.4.0/recording.png)
 
-![Menu Bar](images/v0.2.0/menu-bar.png)
+Context-aware voice for AI _— and a few tools I built for myself_
 
-## Installation
-
-1. Download `yemreak-macOS.dmg` from [Releases](https://github.com/yemreak/yemreak-macos/releases/download/v0.3.0/yemreak-macOS.dmg)
-2. Mount and drag to Applications
-3. Grant permissions: Microphone, Accessibility
+- Clipboard context for AI conversations `⌥A` - captures at record start & stop
+- Voice dictation that actually works offline `⌥⇧A`
+- Session tracking to prevent burnout
+- XDR brightness for outdoor working `F1/F2`
 
 ## Features
 
-- Voice Dictation - Local speech-to-text via WhisperKit
-- Global Hotkeys - Trigger actions from anywhere
-- Transcription History - Browse and search past dictations
-- Display Control - F1/F2 brightness for external displays, toggle built-in display off
-- Auto Updates - Sparkle integration
+- **Dictation** - Voice-to-text, clipboard mode, language & model selection
+- **Display** - XDR brightness, built-in display toggle, F1/F2 control
+- **Session** - Screen time tracking, sleep detection, idle alerts
+- **Tools** - Keyboard cleaner
 
-![Dictation History](images/v0.2.0/dictation-history.png)
+### Dictation
+- **Clipboard Mode** `⌥A` (Option+A) - Transcription with clipboard context
+- **Voice Dictation** `⌥⇧A` (Option+Shift+A) - Lightning fast local speech-to-text
 
-![Display Menu](images/v0.3.0/display-menu.png)
+![Recording](images/v0.4.0/recording.png)
+
+![Dictation History](images/v0.4.0/dictation-history.png)
+
+### Session
+- **Session Tracking** - Screen time, sleep detection, idle alerts
+
+![Session](images/v0.4.0/session.png)
+
+### Display
+- **XDR Brightness** - Push brightness beyond normal limits
+- **Display Control** - F1/F2 brightness, toggle built-in display
+
+![Display Menu](images/v0.4.0/display-menu.png)
+
+### Tools
+- **Keyboard Cleaner** - Lock keyboard for cleaning
+
+![Tools](images/v0.4.0/tools.png)
+
+![Keyboard Cleaner](images/v0.4.0/keyboard-cleaner-panel.png)
+
+### About
+- **Auto Updates** - Always stay up to date
+
+![About](images/v0.4.0/about.png)
+
+
+## Installation
+
+1. Download `yemreak-macOS.dmg` from [Releases](https://github.com/yemreak/yemreak-macos/releases)
+2. Mount and drag to Applications
+3. Grant permissions: Microphone, Accessibility
 
 ## Requirements
 
@@ -30,3 +62,13 @@ Menu bar productivity app for macOS.
 ## Updates
 
 Menu Bar → Check for Updates...
+
+## Keyboard Shortcuts
+
+| Shortcut | Symbol | Action |
+|----------|--------|--------|
+| Option + A | `⌥A` | Clipboard mode |
+| Option + Shift + A | `⌥⇧A` | Voice dictation |
+| Option + Escape | `⌥⎋` | Cancel transcription |
+| Escape | `⎋` | Cancel recording |
+| F1 / F2 | | Brightness down/up |

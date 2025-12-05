@@ -6,17 +6,17 @@
     <description>Most recent updates for yemreak macOS</description>
     <language>en</language>
     <item>
-      <title>Version 0.3.0</title>
-      <pubDate>Wed, 26 Nov 2025 20:36:56 +0000</pubDate>
-      <sparkle:version>3</sparkle:version>
-      <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+      <title>Version 0.4.0</title>
+      <pubDate>Fri, 06 Dec 2024 00:10:00 +0000</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>0.4.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <enclosure 
-        url="https://github.com/yemreak/yemreak-macos/releases/download/v0.3.0/yemreak-macOS.dmg"
-        sparkle:edSignature="QHVEwqPb3JnAhHzC8HP+E8bp75BB+kMF5X9E+rFXi7K/fZkV8SxkMQaJtsq5I3rvL9s6pcuvYcJNgbKddLm/Dg=="
-        length="4139390"
+        url="https://github.com/yemreak/yemreak-macos/releases/download/v0.4.0/yemreak-macOS.dmg"
+        sparkle:edSignature="eFJW7gGl97LvmWX19oxuuPbFwKK3nKXeh//mE/+Cv6rjbLE1dAMaqDMR991GMOJTNIKxeDTIQObFMYYtTYKOBw=="
+        length="4772151"
         type="application/octet-stream"/>
-      <sparkle:releaseNotesLink>https://github.com/yemreak/yemreak-macos/releases/tag/v0.3.0</sparkle:releaseNotesLink>
+      <sparkle:releaseNotesLink>https://github.com/yemreak/yemreak-macos/releases/tag/v0.4.0</sparkle:releaseNotesLink>
     </item>
   </channel>
 </rss>
