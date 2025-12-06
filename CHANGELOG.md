@@ -1,5 +1,30 @@
 # Changelog
 
+## [0.4.1] - 2025-12-06
+
+### New Features
+- **Caps Lock Hyper Key**: Use Caps Lock as a modifier (Caps+A, Caps+B, etc.)
+- **HTTP Batch Requests**: Agent-friendly API with array-only format
+- **Dictation Hotkeys**: Assign hotkeys to switch language (Auto/English/Turkish) and model (Fast/Accurate)
+
+### Improvements
+- Hotkey panel opens with "All" filter by default
+- Extended keyboard key mappings for special characters
+- ESC closes hotkey panel when not recording
+- Adaptive clipboard polling (100ms during recording, 500ms idle)
+- "Report Issue..." menu item for quick GitHub feedback
+- "Open Logs" moved to Tools menu
+
+### Fixes
+- Hotkey registration and conflict detection fixed
+- Own paste no longer captured in clipboard history
+- ESC properly cancels transcription and clears clipboard toasts
+- Model switch blocked during recording/transcribing (prevents crash)
+- Stuck hint now shows above pipeline without overlap
+- ESC consumed during hotkey recording (no longer passes to other apps)
+
+---
+
 ## [0.4.0] - 2025-12-05
 
 ### Transcription is Now Lightning Fast
