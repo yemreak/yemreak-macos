@@ -1,5 +1,5 @@
 # yemreak macOS
-
+[Download](https://github.com/yemreak/yemreak-macos/releases/latest/download/yemreak-macOS.dmg)
 ![Cover](images/v0.4.0/recording.png)
 
 ## Stop dragging stuff to ChatGPT / Cursor / Claude
