@@ -7,14 +7,14 @@
     <language>en</language>
     <item>
       <title>Version 0.4.2</title>
-      <pubDate>Sun, 07 Dec 2025 01:55:56 +0000</pubDate>
-      <sparkle:version>4</sparkle:version>
+      <pubDate>Sun, 07 Dec 2025 02:04:03 +0000</pubDate>
+      <sparkle:version>402</sparkle:version>
       <sparkle:shortVersionString>0.4.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <enclosure
         url="https://github.com/yemreak/yemreak-macos/releases/download/v0.4.2/yemreak-macOS.dmg"
-        sparkle:edSignature="ZiVsGxOrPObGXag6i3Ri+qXCE/oeoqg1dDCzaQSUloUCQoE2IcLi0P6FnrFMOqEocy0SMtWtvqjYpdXpnNuKAQ=="
-        length="4791818"
+        sparkle:edSignature="waYU+RyGvLrCwrGgviEoY8KVDDKFu56VJfGzBfI198x0oIGcuO9QSnT3+mHWFNNPnaTr65b8AIUGuLMbtQITAw=="
+        length="4792480"
         type="application/octet-stream"/>
       <sparkle:releaseNotesLink>https://github.com/yemreak/yemreak-macos/releases/tag/v0.4.2</sparkle:releaseNotesLink>
     </item>
