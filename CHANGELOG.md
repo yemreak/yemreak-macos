@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.4.2] - 2025-12-07
+
+### Improvements
+- Event-driven chunk completion (replaces polling for faster response)
+- Thread-safe context key reading with AtomicContextKeys
+- License panel input field wider (340px) for better visibility
+- Sparkle version format changed to semantic (402, 403...)
+
+### Fixes
+- "Check for Updates" now correctly detects new versions
+- ESC key properly consumed during recording (no longer passes to other apps)
+- Recording state sync from single source (setIsRecording)
+
+---
+
 ## [0.4.1] - 2025-12-06
 
 ### New Features
