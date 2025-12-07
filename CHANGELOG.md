@@ -1,116 +1,140 @@
-# Changelog
+# Değişiklik Günlüğü
+
+> [English](CHANGELOG-en.md)
+
+## [0.4.3] - 2025-12-07
+
+### Değişiklikler
+- **Kısayol değişimi**: `⌥A` = Sadece ses (insan), `⌥⇧A` = Clipboard destekli (AI)
+- **Okunabilir çıktı**: Clipboard referansları `[1:App]` formatında footer ile gösteriliyor
+- **Tam Türkçe arayüz**: Menu bar, paneller, alertler ve tüm UI Türkçe
+
+### İyileştirmeler
+- `dictation.getEntries` yanıtında meta bilgisi (count, limit) eklendi
+- Whisper halüsinasyon filtresi geliştirildi ("Altyazı M.K.", "Subscribe" vb.)
+- Clipboard göstergesi her iki modda da görünüyor
+- Uzun clipboard önizlemeleri için scroll desteği (VS Code tarzı)
+- Whisper kelimeler arası çift boşluk düzeltildi
+- Snippet'lar artık markdown formatında
+- About paneli: "Sesli Clipboard Yöneticisi" alt başlığı
+- About paneli: Tarih bilgisi artık doğru gösteriliyor
+
+### Geliştirici (Beta)
+- **Sesli Snippet Önerileri**: Kayıt sırasında anahtar kelime söyle, snippet önerileri al
+
+---
 
 ## [0.4.2] - 2025-12-07
 
-### Improvements
-- Event-driven chunk completion (replaces polling for faster response)
-- Thread-safe context key reading with AtomicContextKeys
-- License panel input field wider (340px) for better visibility
-- Sparkle version format changed to semantic (402, 403...)
+### İyileştirmeler
+- Event-driven chunk tamamlama (polling yerine daha hızlı yanıt)
+- Thread-safe context key okuma (AtomicContextKeys)
+- Lisans paneli input alanı genişletildi (340px)
+- Sparkle versiyon formatı semantic olarak değişti (402, 403...)
 
-### Fixes
-- "Check for Updates" now correctly detects new versions
-- ESC key properly consumed during recording (no longer passes to other apps)
-- Recording state sync from single source (setIsRecording)
+### Düzeltmeler
+- "Güncellemeleri Kontrol Et" artık yeni versiyonları doğru algılıyor
+- ESC tuşu kayıt sırasında düzgün tüketiliyor
+- Kayıt durumu tek kaynaktan senkronize ediliyor
 
 ---
 
 ## [0.4.1] - 2025-12-06
 
-### New Features
-- **Caps Lock Hyper Key**: Use Caps Lock as a modifier (Caps+A, Caps+B, etc.)
-- **HTTP Batch Requests**: Agent-friendly API with array-only format
-- **Dictation Hotkeys**: Assign hotkeys to switch language (Auto/English/Turkish) and model (Fast/Accurate)
+### Yeni Özellikler
+- **Caps Lock Hyper Tuşu**: Caps Lock'u modifier olarak kullan (Caps+A, Caps+B, vb.)
+- **HTTP Toplu İstekler**: Agent dostu API, sadece array formatı
+- **Dikte Kısayolları**: Dil (Otomatik/İngilizce/Türkçe) ve model (Hızlı/Doğru) değiştirmek için kısayol ata
 
-### Improvements
-- Hotkey panel opens with "All" filter by default
-- Extended keyboard key mappings for special characters
-- ESC closes hotkey panel when not recording
-- Adaptive clipboard polling (100ms during recording, 500ms idle)
-- "Report Issue..." menu item for quick GitHub feedback
-- "Open Logs" moved to Tools menu
+### İyileştirmeler
+- Kısayol paneli varsayılan olarak "Tümü" filtresiyle açılıyor
+- Özel karakterler için genişletilmiş klavye eşlemeleri
+- ESC kayıt yapmıyorken kısayol panelini kapatıyor
+- Adaptif clipboard yoklama (kayıtta 100ms, beklemede 500ms)
+- "Sorun Bildir..." menü öğesi eklendi
+- "Logları Aç" Araçlar menüsüne taşındı
 
-### Fixes
-- Hotkey registration and conflict detection fixed
-- Own paste no longer captured in clipboard history
-- ESC properly cancels transcription and clears clipboard toasts
-- Model switch blocked during recording/transcribing (prevents crash)
-- Stuck hint now shows above pipeline without overlap
-- ESC consumed during hotkey recording (no longer passes to other apps)
+### Düzeltmeler
+- Kısayol kaydı ve çakışma tespiti düzeltildi
+- Kendi yapıştırman artık clipboard geçmişine kaydedilmiyor
+- ESC transkripsiyonu iptal ediyor ve clipboard toast'larını temizliyor
+- Model değişimi kayıt/transkripsiyon sırasında engelleniyor
+- Takılma ipucu pipeline üzerinde örtüşmeden gösteriliyor
+- ESC kısayol kaydı sırasında tüketiliyor
 
 ---
 
 ## [0.4.0] - 2025-12-05
 
-### Transcription is Now Lightning Fast
-- Record as long as you want - transcription happens in the background
-- No more waiting after you stop recording
-- 70% faster than before
-- Cleaner results with automatic silence removal
+### Transkripsiyon Artık Işık Hızında
+- İstediğin kadar kayıt yap - transkripsiyon arka planda oluyor
+- Kaydı durdurduktan sonra bekleme yok
+- Eskisinden %70 daha hızlı
+- Otomatik sessizlik kaldırma ile temiz sonuçlar
 
-### New Features
-- **Dictation** `Option+Shift+A`: Voice to text, paste directly
-- **Clipboard Mode** `Option+A`: Include what you copied in your transcription for AI conversations
-- **Clipboard Stack**: See your copied items while recording, hover to preview
-- **Language Selection**: Choose your transcription language from the menu
-- **Model Selection**: Pick between Accurate or Fast transcription
-- **Silence Sensitivity**: Control how sensitive the recording is to pauses
-- **Session Tracking**: See how long you've been at your computer
-- **Idle Alerts**: Get reminded when you've been inactive too long (15min-2h)
-- **Sleep Detection**: Automatically resets after overnight breaks
-- **Session Notifications**: Know when you hit time milestones
-- **XDR Brightness**: Push your display brighter than the normal limit
-- **Keyboard Cleaner**: Lock your keyboard to safely wipe it down
-- **Hotkey Panel**: See and customize all shortcuts in one place
-- **Secure API Keys**: Your keys are stored safely in macOS Keychain
-- **Crash Reporting**: We know when something breaks so we can fix it
+### Yeni Özellikler
+- **Dikte** `Option+Shift+A`: Sesten metne, doğrudan yapıştır
+- **Clipboard Modu** `Option+A`: Kopyaladıklarını AI sohbetleri için transkripsiyona dahil et
+- **Clipboard Yığını**: Kayıt sırasında kopyaladıklarını gör, önizlemek için üzerine gel
+- **Dil Seçimi**: Transkripsiyon dilini menüden seç
+- **Model Seçimi**: Doğru veya Hızlı transkripsiyon arasında seç
+- **Sessizlik Hassasiyeti**: Kaydın duraklamalara ne kadar duyarlı olduğunu ayarla
+- **Oturum Takibi**: Bilgisayar başında ne kadar süredir olduğunu gör
+- **Hareketsizlik Uyarıları**: Çok uzun süre hareketsiz kaldığında hatırlat (15dk-2sa)
+- **Uyku Algılama**: Gece molalarından sonra otomatik sıfırlanır
+- **Oturum Bildirimleri**: Zaman kilometre taşlarına ulaştığında bil
+- **XDR Parlaklık**: Ekranı normal limitin ötesine it
+- **Klavye Temizleyici**: Silmek için klavyeni kilitle
+- **Kısayol Paneli**: Tüm kısayolları tek yerden gör ve özelleştir
+- **Güvenli API Anahtarları**: Anahtarların macOS Keychain'de güvenle saklanıyor
+- **Çökme Raporlama**: Bir şey bozulduğunda düzeltebilmemiz için biliyoruz
 
-### Better Experience
-- App never freezes while transcribing
-- Hotkeys respond instantly
-- Permissions asked only when needed
-- See transcription progress: REC -> Recorded -> % -> Pasted
-- Stuck? A hint appears after 3 seconds
-- See clipboard items inline in history
-- Fresh new icon
+### Daha İyi Deneyim
+- Transkripsiyon sırasında uygulama donmuyor
+- Kısayollar anında yanıt veriyor
+- İzinler sadece gerektiğinde soruluyor
+- Transkripsiyon ilerlemesini gör: REC -> Kaydedildi -> % -> Yapıştırıldı
+- Takıldın mı? 3 saniye sonra ipucu görünüyor
+- Clipboard öğelerini geçmişte satır içi gör
+- Yepyeni ikon
 
-### Menu & Settings
-- "Check for Updates..." now at top level
-- Auto-update toggle in About panel
-- Cleaner menu without developer options
-- Quick links to GitHub in About panel
+### Menü ve Ayarlar
+- "Güncellemeleri Kontrol Et..." artık üst seviyede
+- Hakkında panelinde otomatik güncelleme düğmesi
+- Geliştirici seçenekleri olmadan temiz menü
+- Hakkında panelinde GitHub bağlantıları
 
-### Fixes
-- ESC key works everywhere now
-- Arrow keys work in search
-- Audio stops cleanly when you stop it
-- Session time saved between restarts
+### Düzeltmeler
+- ESC tuşu artık her yerde çalışıyor
+- Ok tuşları aramada çalışıyor
+- Durdurduğunda ses temiz şekilde duruyor
+- Oturum süresi yeniden başlatmalar arasında kaydediliyor
 
-### Screenshots
+### Ekran Görüntüleri
 
-![Recording](images/v0.4.0/recording.png)
-![Dictation History](images/v0.4.0/dictation-history.png)
-![Session](images/v0.4.0/session.png)
-![Display Menu](images/v0.4.0/display-menu.png)
-![Tools](images/v0.4.0/tools.png)
-![Keyboard Cleaner](images/v0.4.0/keyboard-cleaner-panel.png)
-![About](images/v0.4.0/about.png)
+![Kayıt](images/v0.4.0/recording.png)
+![Dikte Geçmişi](images/v0.4.0/dictation-history.png)
+![Oturum](images/v0.4.0/session.png)
+![Ekran Menüsü](images/v0.4.0/display-menu.png)
+![Araçlar](images/v0.4.0/tools.png)
+![Klavye Temizleyici](images/v0.4.0/keyboard-cleaner-panel.png)
+![Hakkında](images/v0.4.0/about.png)
 
 ---
 
 ## [0.3.0] - 2025-11-28
 
-### New Features
-- Control display brightness with F1/F2
-- Turn off your built-in display
-- Search through your transcription history
+### Yeni Özellikler
+- F1/F2 ile ekran parlaklığını kontrol et
+- Dahili ekranı kapat
+- Transkripsiyon geçmişinde ara
 
 ---
 
 ## [0.2.0] - 2025-11-26
 
-### Initial Release
-- Voice to text
-- Global hotkeys
-- Menu bar interface
-- Automatic updates
+### İlk Sürüm
+- Sesten metne
+- Global kısayollar
+- Menü çubuğu arayüzü
+- Otomatik güncellemeler

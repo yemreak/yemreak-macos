@@ -1,2 +1,5 @@
 .cache/yemreak/contexts.jsonl
 .cache/yemreak/logs.jsonl
+.cache/claude/hooks.jsonl
+.cache/claude/messages.jsonl
+.cache/claude/sessions.jsonl
