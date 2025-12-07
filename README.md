@@ -1,53 +1,53 @@
-# yemreak macOS
-[Download](https://github.com/yemreak/yemreak-macos/releases/latest/download/yemreak-macOS.dmg)
+# Speak, copy, AI gets it — including where it came from.
 
+[**Download**](https://github.com/yemreak/yemreak-macos/releases/latest)
 
-![Cover](images/v0.4.0/recording.png)
+## Sound familiar?
 
-## Stop dragging stuff to ChatGPT / Cursor / Claude
+In Cursor:
 
-Copying screenshots to ChatGPT? Finding files, dragging, waiting for upload?
+Cmd+C, Cmd+V, Cmd+C, Cmd+V...
 
-**Just copy while talking. Done.**
+Take a screenshot, copy, paste
 
-`Option+A` → Your clipboard becomes part of your voice message.
+wait..
 
-![Recording](images/v0.4.0/recording.png)
+"The previous one", "the next one", "the first one I sent", "not that one!"
 
-## Voice to text that actually works offline
+Every. Single. Time.
 
-No internet at the café? Dictation won't work?
+## There's a solution.
 
-**Works everywhere. No cloud. Privacy.**
+Voice clipboard manager for macOS.
 
-`Option+Shift+A` → Speak, paste, continue.
+`Option+A` → Start speaking. Copy while talking — what you copied, where you copied from, AI sees it all. `Option+A` → Paste everything in order. Done.
 
-![Dictation History](images/v0.4.0/dictation-history.png)
+_To just convert speech to text, use `Option+Shift+A`_
 
-## Know when you've been at the screen too long
+![Cover](images/landing/1-cover.png)
 
-Hours pass. You don't notice. Eyes hurt, back hurts.
+## What does it look like?
 
-**Get reminded before it's too late.**
+![Open AI](images/landing/2-open-ai.png)
 
-Session tracking that tells you when to stop.
+This is how your text and clipboard contents are sent to AI:
 
-![Session](images/v0.4.0/session.png)
+![Transcription](images/landing/3-transcription.png)
+![Pasted](images/landing/4-pasted.png)
 
-## See your screen outside
+You can also preview your clipboard history:
 
-Sunny day, screen too dim, can't see anything?
+![Preview](images/landing/5-preview.png)
+![History](images/landing/6-history.png)
 
-**Go brighter than Apple allows.**
+## What else can you do?
 
-F1/F2 beyond the normal limit.
+- **No internet at the cafe?** `Option+Shift+A` → Speak offline, paste.
+- **Hours in front of the screen?** → Get break reminders.
+- **Can't see the screen in sunlight?** `F1/F2` → Go beyond Apple's limits.
+- **Keys pressing while cleaning keyboard?** → Lock, clean, unlock.
 
-![Display Menu](images/v0.4.0/display-menu.png)
+## Here's how I work
 
-## Clean your keyboard without random typing
-
-Want to wipe your keyboard but keys keep triggering?
-
-**Lock it, clean it, unlock.**
-
-![Keyboard Cleaner](images/v0.4.0/keyboard-cleaner-panel.png)
+![Meta](images/landing/7-meta.png)
+![Workflow](images/landing/8-workflow.png)
