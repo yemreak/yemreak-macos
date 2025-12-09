@@ -5,35 +5,33 @@
 ## [0.5.0] - 2025-12-09
 
 ### New Features
-- **Command Panel** `⌃⌘Space`: Alfred-like search panel - access all commands from one place
-- **Text-to-Speech (TTS)** `⌘⌥R`: Read selected text aloud, control with mini player
-- **Add Note** `⌥S`: Add text note during recording, included in transcript
-  - Added notes appear as Note Stack on the right
-  - Previous notes listed in popover, filterable
-  - Delete notes with ⌘⌫ or X button
-- **Display Toggle**: Turn Studio Display or built-in display on/off from command panel
-- **Actions Popover** `⌘K`: Quick actions for selected command (Execute, Set Hotkey, Clear, Reset)
-- **Nested Selectors**: Submenu panels for settings (→ to open, ← to go back)
-  - Dictation: Language, Model, Silence Sensitivity
-  - Session: Idle Reset, Lifecycle, Notifications, Previous Sessions
-- **Multi-select**: Space to toggle selection, Enter to batch execute (e.g., copy multiple sessions)
+
+**Command Panel** `⌃⌘Space`
+- Alfred-like search panel - access all commands from one place
+- Actions Popover `⌘K`: Quick actions (Execute, Set Hotkey, Clear, Reset)
+- Nested Selectors: Settings submenu (→ to open, ← to go back)
+- Multi-select: Space to toggle, Enter to batch execute
+
+**Dictation**
+- Add Note `⌥S`: Add text note during recording (stack on right)
+- Settings: Language, Model, Silence Sensitivity selectors
+
+**Session**
+- Settings: Idle Reset, Lifecycle, Notifications
+- Previous Sessions: Multi-select for batch copy
+
+**Display**
+- Display Toggle: Turn Studio Display or built-in on/off
+
+**System**
+- Text-to-Speech (TTS) `⌘⌥R`: Read selected text aloud
 
 ### Improvements
-- Status notifications localized: "✓ Yapıştırıldı" / "✓ Pasted", "● Voice model (loading)", etc.
-- Green "✓ Loaded" indicator when voice model is ready (visible for 1 second)
-- Command panel width auto-adjusts based on chip count
-- Navigate between chips with Tab/Shift+Tab
-- Panel height increased (7 rows visible)
-- Conditional hotkeys: ⌘W in Chrome now closes tab (doesn't work when panel is open)
-- Access to turned-off displays via cache (can toggle back on)
 - Recently used commands appear first (MRU sorting)
-- Selector commands show `[→]` indicator
-- Scroll indicators hidden (cleaner look)
-
-### Architecture
-- Dictation system simplified: 4 modes reduced to 1
-- Display, Dictation, Whisper modules consolidated into single files
-- Hotkey architecture split into two layers: Global (CGEvent) + Panel (Responder Chain)
+- Tab/Shift+Tab to navigate categories
+- Access turned-off displays via cache
+- Localized status notifications
+- Conditional hotkeys: ⌘W in Chrome closes tab
 
 ### Screenshots
 
